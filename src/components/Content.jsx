@@ -39,7 +39,7 @@ const Section2 = () => {
       </div>
       <hr className="w-full bg-white h- " />
       <div className="flex items-end justify-between text-[#F3F4F6]">
-        <h1 className=" text-5xl md:text-[8vw] leading-[0.8] mt-10">
+        <h1 className=" text-3xl md:text-[8vw] leading-[0.8] mt-10">
           LET'S CONNECT
         </h1>
         <p>©copyright</p>
