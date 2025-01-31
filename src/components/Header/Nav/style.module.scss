@@ -1,0 +1,23 @@
+.nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 100px 35px 50px 40px;
+	height: 100%;
+	box-sizing: border-box;
+	.body {
+		display: flex;
+		gap: px;
+		flex-direction: column;
+		.linkContainer {
+			line-height: 45px;
+		}
+		a {
+			text-decoration: none;
+			color: #1C1C1C;
+			font-size: 46px;
+			text-transform: capitalize;
+			font-weight: 400;
+		}
+	}
+}

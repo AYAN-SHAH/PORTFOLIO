@@ -1,0 +1,65 @@
+.paragraph {
+  display: flex;
+  font-size: 20px;
+  line-height: 1;
+  padding: 40px;
+  max-width: 60%;
+  color: white;
+  flex-wrap: wrap;
+  text-align: left;
+
+  .word {
+    position: relative;
+    margin-right: 12px;
+    margin-top: 12px;
+
+    .shadow {
+      position: absolute;
+      opacity: 20%;
+    }
+  }
+}
+
+/* Breakpoints */
+@media (max-width: 1024px) {
+  /* Tailwind's lg breakpoint */
+  .paragraph {
+    font-size: 18px;
+    padding: 32px;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Tailwind's md breakpoint */
+  .paragraph {
+    font-size: 16px;
+    padding: 24px;
+    max-width: 90%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Tailwind's sm breakpoint */
+  .paragraph {
+    font-size: 16px;
+    padding: 16px;
+    max-width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Custom smaller breakpoint */
+  .paragraph {
+    font-size: 14px;
+    padding: 8px;
+    max-width: 100%;
+  }
+
+  .paragraph .word {
+    margin-right: 8px;
+    margin-top: 8px;
+  }
+}
