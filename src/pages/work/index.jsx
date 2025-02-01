@@ -41,7 +41,7 @@ export default function Home() {
           content=" full-stack developer with over a decade of experience, specializing in creating impactful digital solutions."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/download-modified.png" />
       </Head>
       <Page background="#F7F2F2" className="bg-[#F7F2F2] ">
         <div className="rounded-b-2xl container mx-auto">
