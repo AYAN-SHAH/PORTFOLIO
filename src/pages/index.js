@@ -68,7 +68,7 @@ export default function Home() {
         <div className="">
           {/* Hero Section */}
           <section
-            className="h-[100vh] bg-[#F7F2F2] flex items-center flex-col justify-end  top-0 z-10 pl-[20px] md:pl-[0px]"
+            className="min-h-[700px] md:h-[100vh] bg-[#F7F2F2] flex items-center flex-col justify-end  top-0 z-10 pl-[20px] md:pl-[0px]"
             style={{ padding: "0 0 0 0px" }}
           >
             {/* section 1 */}
@@ -204,7 +204,7 @@ export default function Home() {
             <Work />
           </section>
           <section className="bg-[#F7F2F2] mb-20  z-40 container mx-auto text-[#1C1C1C]">
-            <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-16 gap-1 md:gap-6 px-4 md:px-0">
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-16 gap-1 md:gap-6 px-4 md:px-0 min-h-[]">
               <h1
                 className="text-[42px] md:text-5xl lg:text-[4.8rem] font- tracking-wide leading-tight uppercase"
                 // Custom font for heading

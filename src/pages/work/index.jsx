@@ -47,7 +47,7 @@ export default function Home() {
         <div className="rounded-b-2xl container mx-auto">
           {/* Hero Section */}
           <section
-            className=" h-[52vh] md:h-[100vh] bg-[#F7F2F2] flex items-center flex-col justify-end  top-0 z-10 pl-[16px] md:pl-[0px]"
+            className=" min-h-[400px] md:h-[100vh] bg-[#F7F2F2] flex items-center flex-col justify-end  top-0 z-10 pl-[16px] md:pl-[0px]"
             // style={{ padding: "0 0 0 px" }}
           >
             {/* section 1 */}

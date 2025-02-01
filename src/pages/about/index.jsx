@@ -74,7 +74,7 @@ export default function Home() {
           <section
             className=" bg-[#F7F2F2] flex items-center flex-col justify-end relative  top-0 z-[50]  md:pl-[0px] rounded-b-3xl 
             
-             h-[52vh] md:h-[100vh]     pl-[16px] 
+             min-h-[400px] md:h-[100vh]     pl-[16px] 
 
             "
             style={{ padding: "0 0 0 0px" }}
