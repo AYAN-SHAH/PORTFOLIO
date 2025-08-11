@@ -92,7 +92,7 @@ export default function Home() {
               AYAN SHAH
             </motion.h1>
 
-            <div className="container mx-auto - m  flex items-end  bg--900 w- h- pb-6 md:pb-12 px-4 md:px-0 ">
+            <div className="container mx-auto flex items-end bg--900 w-full h-full pb-6 md:pb-12 px-4 md:px-8 lg:px-16">
               <div className="text-left">
                 <motion.div
                   variants={containerVariants}
@@ -102,20 +102,19 @@ export default function Home() {
                 >
                   <motion.h1
                     variants={textVariants}
-                    className="text-5xl md:text-[120px] font-[500] text-[] leading-none"
+                    className="text-5xl md:text-[120px] font-[500] text-[#1C1C1C] leading-none"
                   >
                     CREATIVE DEVELOPER
                   </motion.h1>
                   <motion.h1
                     variants={textVariants}
-                    className="text-5xl md:text-[120px] font-[500] text-[] leading-none"
+                    className="text-5xl md:text-[120px] font-[500] text-[#1C1C1C] leading-none"
                   >
                     SPECIALIZING IN
                   </motion.h1>
                   <motion.div variants={textVariants}>
                     <WordRotate
-                      className="text-5xl md:text-[120px] font-[500] text-[#1C1C1C] leading-none
-                       "
+                      className="text-5xl md:text-[120px] font-[500] text-[#1C1C1C] leading-none"
                       words={["WEB DEVELOPER", "MOB DEVELOPER"]}
                     />
                   </motion.div>
@@ -179,12 +178,11 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="bg- flex flex-col y- items- justify-center   z-30  overflow-hidden py-28 container mx-auto px-0 md:px-0 text-[#1C1C1C]">
+          <section className="bg- flex flex-col y- items- justify-center z-30 overflow-hidden py-28 container mx-auto px-0 md:px-0 text-[#1C1C1C]">
             {/* Section 3 */}
-
-            <div className="flex flex-col md:flex-row md:items-end justify-between w-full mb-8 md:mb-16 gap-1 md:gap-6 px-4 md:px-0">
+            <div className="flex flex-col md:flex-row md:items-end justify-between w-full mb-8 md:mb-16 gap-1 md:gap-6 px-4 md:px-16">
               <h1
-                className="text-[42px] md:text-5xl lg:text-[4.8rem] font- tracking-wide leading-tight uppercase text-[]"
+                className="text-[42px] md:text-5xl lg:text-[4.8rem] font- tracking-wide leading-tight uppercase text-[] px-4 md:px-0"
                 // Custom font for heading
               >
                 featured
@@ -199,12 +197,14 @@ export default function Home() {
                 across various industries.
               </p>
             </div>
-            <hr className="border-t-2 bg-black border-black mx-4 md:px-0" />
+            <hr className="border-t-2 bg-black border-black mx-4 md:mx-16" />
 
-            <Work />
+            <div className="px-4 md:px-16">
+              <Work />
+            </div>
           </section>
-          <section className="bg-[#F7F2F2] mb-20  z-40 container mx-auto text-[#1C1C1C]">
-            <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-16 gap-1 md:gap-6 px-4 md:px-0 min-h-[]">
+          <section className="bg-[#F7F2F2] mb-20 z-40 container mx-auto text-[#1C1C1C]">
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-16 gap-1 md:gap-6 px-4 md:px-16 min-h-[]">
               <h1
                 className="text-[42px] md:text-5xl lg:text-[4.8rem] font- tracking-wide leading-tight uppercase"
                 // Custom font for heading
@@ -222,9 +222,9 @@ export default function Home() {
                 collaborative projects.
               </p>
             </div>
-            <hr className="border-t-2 bg-black border-black mx-4 md:mx-0 mb-0 md:mb-6" />
+            <hr className="border-t-2 bg-black border-black mx-4 md:mx-16 mb-0 md:mb-6" />
 
-            <section ref={container}>
+            <section ref={container} className="px-4 md:px-16">
               {projects.map((project, i) => {
                 const targetScale = 1 - (projects.length - i) * 0.05;
                 return (

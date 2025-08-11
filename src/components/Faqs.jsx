@@ -31,10 +31,10 @@ export default function FAQSection() {
 
   return (
     <div
-      className="min-h-screen px-4 md:px-0 pt-8 container mx-auto text-[#1C1C1C]"
+      className="min-h-screen px- md:px- lg:px- pt-8 container mx-auto text-[#1C1C1C]"
       style={{ backgroundColor: "#F7F2F2" }}
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4 md:px-0 lg:px-0">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-16 gap-1 md:gap-6">
           <h1

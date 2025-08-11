@@ -100,13 +100,13 @@ export default function Home() {
               AYAN SHAH
             </motion.h1>
 
-            <div className="container mx-auto - md:mb-28  flex items-end bg--900 w- h- pb-12 px-4 md:px-0 md:pb-0">
+            <div className="container mx-auto md:mb-28 flex items-end bg--900 w-full h-full pb-12 px-4 md:px-8 lg:px-16 md:pb-0">
               <div className="text-left">
                 <motion.div
                   variants={containerVariants}
                   initial="hidden"
                   animate="visible"
-                  className="overflow-hidden "
+                  className="overflow-hidden"
                 >
                   <motion.h1
                     variants={textVariants}
@@ -116,7 +116,7 @@ export default function Home() {
                   </motion.h1>
                   <motion.h1
                     variants={textVariants}
-                    className=" text-5xl md:text-[120px] font-[500] text-[#1C1C1C] leading-none uppercase"
+                    className="text-5xl md:text-[120px] font-[500] text-[#1C1C1C] leading-none uppercase"
                   >
                     digital experiences
                   </motion.h1>
@@ -127,7 +127,7 @@ export default function Home() {
           <section className="relative bg-[#1C1C1C] bg-cover bg-center bg-no-repeat flex flex-col justify-end md:justify-start h-[60vh] md:h-screen -mt-6 -mb-6 pt-6 ">
             <div className="absolute inset-0 bg-[#1C1C1C] bg-opacity-0"></div>
             <Paragraph
-              paragraph="I specialize in creating impactful digital experiences that connect businesses with their audience. By focusing on innovation, user-centric design, and streamlined solutions, I help brands grow, achieve their goals, and build lasting relationships with their customers.
+              paragraph="I'm a full-stack developer specializing in modern web applications, mobile development, and e-commerce solutions. With expertise in React, Laravel, Flutter, and Firebase, I create scalable digital products that drive business growth. From mobile apps to web platforms, I deliver innovative solutions that combine cutting-edge technology with exceptional user experiences.
 
 "
             />
@@ -144,10 +144,10 @@ export default function Home() {
               style={{ fontFamily: "'Inter', sans-serif" }}
             >
               <p>
-                I specialize in designing impactful digital experiences that not
-                only meet but exceed expectations. Through a collaborative
-                approach, I work closely with clients, engaging in workshops and
-                thoughtful discussions to bring their unique vision to life.
+                I specialize in building full-stack applications and mobile solutions that not
+                only meet but exceed client expectations. Through a collaborative
+                approach, I work closely with clients to understand their technical requirements
+                and business goals, delivering scalable solutions that drive real results.
               </p>
               <p>
                 With over a decade of experience, I’ve had the privilege of
@@ -158,9 +158,9 @@ export default function Home() {
                 design and compelling storytelling.
               </p>
               <p>
-                Driven by a passion for digital innovation, I continually strive
-                to push the limits of creativity and adopt the latest
-                technologies to deliver exceptional value and lasting impact.
+                Driven by a passion for clean code and innovative technology, I continually strive
+                to implement best practices and adopt the latest frameworks to deliver
+                high-performance applications that scale with your business needs.
               </p>
             </div>
           </section>
@@ -178,8 +178,8 @@ export default function Home() {
                 className="text-lg md:text-2xl max-w-md text-gray-950"
                 style={{ fontFamily: "'Inter', sans-serif" }} // Custom font for paragraph
               >
-                Experience my comprehensive suite of creative services crafted
-                to elevate your brand and captivate your audience
+                Experience my comprehensive suite of development services crafted
+                to build scalable applications and drive business growth
               </p>
             </div>
             <hr className="border-t-2 bg-black border-black mx-4 md:mx-12 mb-0 md:mb-6" />

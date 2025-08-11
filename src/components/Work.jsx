@@ -7,36 +7,51 @@ const PortfolioSection = () => {
 
   const projects = [
     {
-      title: "Elegant Pack",
+      title: "Ongoing Project",
       description:
-        "Enhancing Elegant Pack's brand with a sophisticated identity and engaging digital platform for their premium cosmetic packaging solutions.",
-      tags: ["Brand Identity", "Digital Design"],
-      image:
-        "https://framerusercontent.com/images/JcWCXSvTQOoBDbxmwA5ee8Nui4.jpg?scale-down-to=2048",
+        "An exciting new project currently in development. This innovative solution showcases cutting-edge technology and modern design principles.",
+      tags: ["In Development", "Web Development", "UI / UX Design"],
+      video: "/images/vid.mp4",
     },
     {
-      title: "Radiant Glow",
+      title: "EarnPay Mobile",
       description:
-        "Transforming RadiantGlow's brand and digital presence with refined brand identity, sophisticated UI/UX design, and robust web development.",
-      tags: ["UI / UX Design", "Web Development", "Brand Identity"],
-      image:
-        "https://framerusercontent.com/images/JcWCXSvTQOoBDbxmwA5ee8Nui4.jpg?scale-down-to=2048",
+        "A comprehensive mobile application for EarnPay, featuring intuitive user interface design and seamless payment processing functionality.",
+      tags: ["Mobile Development", "UI / UX Design", "Payment Integration"],
+      image: "/images/earnpay-mobile.jpeg",
+      link: "https://drive.google.com/drive/folders/1toTJ3jPI3vXDLAjFXXaIUB6oSkhulnHm",
     },
     {
-      title: "Water Drops",
+      title: "EarnPay Admin",
       description:
-        "Enhancing Water Drops's digital presence with cutting-edge web development and captivating digital design.",
-      tags: ["Web Development", "Digital Design"],
-      image:
-        "https://framerusercontent.com/images/JcWCXSvTQOoBDbxmwA5ee8Nui4.jpg?scale-down-to=2048",
+        "Administrative dashboard for EarnPay with advanced analytics, user management, and comprehensive business insights.",
+      tags: ["Web Development", "Admin Dashboard", "Analytics"],
+      image: "/images/earnpay-admin.png",
+      link: "https://earnpay-27725.web.app/",
     },
     {
-      title: "Luxe Beauty",
+      title: "SmartSale",
       description:
-        "Revolutionizing Luxe Beauty's online presence with cutting-edge web design and robust web development.",
-      tags: ["UI / UX Design", "Web Development"],
-      image:
-        "https://framerusercontent.com/images/JcWCXSvTQOoBDbxmwA5ee8Nui4.jpg?scale-down-to=2048",
+        "A comprehensive e-commerce platform with advanced features including inventory management, sales analytics, and seamless customer experience.",
+      tags: ["E-commerce", "Web Development", "UI / UX Design"],
+      image: "/images/smartsale.jpeg",
+      link: "https://zeb.smartestdevelopers.com/apk/SmartSale.apk",
+    },
+    {
+      title: "School Management System",
+      description:
+        "A comprehensive school management platform with student portal, admin dashboard, and educational tools for modern educational institutions.",
+      tags: ["Web Development", "Education", "Management System"],
+      image: "/images/school.png",
+      link: "https://school.smartestdevelopers.com/login",
+    },
+    {
+      title: "Smartest Devs",
+      description:
+        "The main website for Smartest Devs organization, showcasing our development services, team expertise, and innovative solutions for clients worldwide.",
+      tags: ["Web Development", "Organization Website", "UI / UX Design"],
+      image: "/images/sds.png",
+      link: "https://smartestdevelopers.com/",
     },
   ];
 
@@ -62,11 +77,52 @@ const PortfolioSection = () => {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-[100%] object-cover rounded-2xl transform transition-transform duration-300 group-hover:scale-110"
-                />
+                {project.video ? (
+                  <>
+                    {/* Video background */}
+                    <video
+                      src={project.video}
+                      className="absolute inset-0 w-full h-full object-cover rounded-2xl blur-sm scale-110 opacity-30"
+                      muted
+                      loop
+                      autoPlay
+                    />
+                    {/* Main video */}
+                    <video
+                      src={project.video}
+                      className="relative w-full h-full object-contain rounded-2xl transform transition-transform duration-300 group-hover:scale-105 z-10"
+                      muted
+                      loop
+                      autoPlay
+                      controls
+                    />
+                  </>
+                ) : (
+                  <>
+                    {/* Blurred background image */}
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="absolute inset-0 w-full h-full object-cover rounded-2xl blur-sm scale-110 opacity-30"
+                    />
+                    {/* Main image */}
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="relative w-full h-full object-contain rounded-2xl transform transition-transform duration-300 group-hover:scale-105 z-10"
+                    />
+                  </>
+                )}
+                {/* Clickable overlay for projects with links */}
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute inset-0 z-20 cursor-pointer"
+                    aria-label={`View ${project.title} project`}
+                  />
+                )}
               </div>
               <div className="py-4 md:py-6">
                 <h3 className=" text-4xl md:text-5xl font- mb-4 uppercase">

@@ -44,10 +44,10 @@ export default function Home() {
         <link rel="icon" href="/download-modified.png" />
       </Head>
       <Page background="#F7F2F2" className="bg-[#F7F2F2] ">
-        <div className="rounded-b-2xl container mx-auto">
+        <div className="rounded-b-2xl container mx-auto px-4 md:px-8 lg:px-16">
           {/* Hero Section */}
           <section
-            className=" min-h-[400px] md:h-[100vh] bg-[#F7F2F2] flex items-center flex-col justify-end  top-0 z-10 pl-[16px] md:pl-[0px]"
+            className="min-h-[400px] md:h-[100vh] bg-[#F7F2F2] flex items-center flex-col justify-end top-0 z-10 pl-[16px] md:pl-[0px]"
             // style={{ padding: "0 0 0 px" }}
           >
             {/* section 1 */}
