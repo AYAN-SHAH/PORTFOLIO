@@ -7,49 +7,49 @@ const PortfolioSection = () => {
 
   const projects = [
     {
-      title: "Ongoing Project",
+      title: "COLOR - Nightlife Platform",
       description:
-        "An exciting new project currently in development. This innovative solution showcases cutting-edge technology and modern design principles.",
-      tags: ["In Development", "Web Development", "UI / UX Design"],
+        "A comprehensive nightlife and entertainment ecosystem with mobile app (Flutter), venue management portal (React), and superadmin portal. Features QR code check-ins, real-time analytics, and multi-platform integration.",
+      tags: ["Flutter", "React", "Node.js", "MongoDB", "Firebase", "Real-time"],
       video: "/images/vid.mp4",
     },
     {
       title: "EarnPay Mobile",
       description:
-        "A comprehensive mobile application for EarnPay, featuring intuitive user interface design and seamless payment processing functionality.",
-      tags: ["Mobile Development", "UI / UX Design", "Payment Integration"],
+        "Task-based earning platform built with Flutter. Features user authentication, task completion system (45-60 Rs per task), package purchases, balance management, and withdrawal processing to bank accounts.",
+      tags: ["Flutter", "Firebase", "Provider", "Material Design", "Payment System"],
       image: "/images/earnpay-mobile.jpeg",
       link: "https://drive.google.com/drive/folders/1toTJ3jPI3vXDLAjFXXaIUB6oSkhulnHm",
     },
     {
       title: "EarnPay Admin",
       description:
-        "Administrative dashboard for EarnPay with advanced analytics, user management, and comprehensive business insights.",
-      tags: ["Web Development", "Admin Dashboard", "Analytics"],
+        "React-based admin dashboard with TypeScript. Features task management, user management, submission review, withdrawal processing, and comprehensive analytics with Redux Toolkit and ApexCharts.",
+      tags: ["React", "TypeScript", "Redux", "Firebase", "Admin Dashboard", "Analytics"],
       image: "/images/earnpay-admin.png",
       link: "https://earnpay-27725.web.app/",
     },
     {
-      title: "SmartSale",
+      title: "SmartSale - Business Management",
       description:
-        "A comprehensive e-commerce platform with advanced features including inventory management, sales analytics, and seamless customer experience.",
-      tags: ["E-commerce", "Web Development", "UI / UX Design"],
+        "Comprehensive POS and business management app built with React Native. Features sales management, inventory tracking, customer/supplier management, financial reporting, and invoice generation with Laravel backend.",
+      tags: ["React Native", "Expo", "Laravel", "MySQL", "POS System", "Business Management"],
       image: "/images/smartsale.jpeg",
       link: "https://zeb.smartestdevelopers.com/apk/SmartSale.apk",
     },
     {
       title: "School Management System",
       description:
-        "A comprehensive school management platform with student portal, admin dashboard, and educational tools for modern educational institutions.",
-      tags: ["Web Development", "Education", "Management System"],
+        "Comprehensive educational management platform featuring student management, teacher portals, class timetables, fee management, parent communication, and administrative tools for complete school operations.",
+      tags: ["Web Development", "Education", "Management System", "Student Portal", "Fee Management"],
       image: "/images/school.png",
       link: "https://school.smartestdevelopers.com/login",
     },
     {
       title: "Smartest Devs",
       description:
-        "The main website for Smartest Devs organization, showcasing our development services, team expertise, and innovative solutions for clients worldwide.",
-      tags: ["Web Development", "Organization Website", "UI / UX Design"],
+        "Organization website built with Next.js showcasing development services, team expertise, and innovative solutions. Features modern web development practices and responsive design.",
+      tags: ["Next.js", "React", "Organization Website", "UI / UX Design", "Web Development"],
       image: "/images/sds.png",
       link: "https://smartestdevelopers.com/",
     },
@@ -86,6 +86,7 @@ const PortfolioSection = () => {
                       muted
                       loop
                       autoPlay
+                      preload="metadata"
                     />
                     {/* Main video */}
                     <video
@@ -95,6 +96,7 @@ const PortfolioSection = () => {
                       loop
                       autoPlay
                       controls
+                      preload="metadata"
                     />
                   </>
                 ) : (
@@ -103,12 +105,14 @@ const PortfolioSection = () => {
                     <img
                       src={project.image}
                       alt={project.title}
+                      loading="lazy"
                       className="absolute inset-0 w-full h-full object-cover rounded-2xl blur-sm scale-110 opacity-30"
                     />
                     {/* Main image */}
                     <img
                       src={project.image}
                       alt={project.title}
+                      loading="lazy"
                       className="relative w-full h-full object-contain rounded-2xl transform transition-transform duration-300 group-hover:scale-105 z-10"
                     />
                   </>
