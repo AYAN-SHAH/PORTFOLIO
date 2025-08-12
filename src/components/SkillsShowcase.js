@@ -43,20 +43,14 @@ const skills = [
   { name: "Vue.js", icon: "💚" },
   { name: "Angular", icon: "🔴" },
   { name: "PostgreSQL", icon: "🐘" },
- 
   { name: "AWS", icon: "☁️" },
   { name: "Vercel", icon: "▲" },
   { name: "Netlify", icon: "🌐" },
- 
   { name: "REST API", icon: "🔗" },
   { name: "JWT", icon: "🔐" },
   { name: "OAuth", icon: "🔑" },
- 
   { name: "Babel", icon: "⚙️" },
-  
- 
   { name: "Sass", icon: "💎" },
-  
   { name: "Material-UI", icon: "🎨" },
   { name: "Ant Design", icon: "🐜" },
   { name: "Chakra UI", icon: "🎯" },
